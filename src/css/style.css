@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #CBBFBB;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.container {
+  max-width: 1020px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main {
+  padding-top: 100px;
+  position: relative;
+}
+
+.main__inner {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #e6e5e5;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.main__messages {
+  width: 100%;
+  min-height: 400px;
+  max-height: 100%;
+}
+
+.message-item {
+  background-color: #61988E;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  color: #e6e5e5;
+  font-size: 12px;
+}
+
+.message-item__time {
+  text-align: right;
+}
+
+.message-item__text {
+  width: 417px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.message-item__geo {
+}
+
+.main__textarea {
+  border: 1px solid #b9b8b8;
+  background-color: #f9f8f8;
+  border-radius: 10px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  max-height: 100%;
+  min-height: 70px;
+  margin: 10px 0;
+  outline: none;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+}
+
+.popup {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  z-index: 9999999;
+  margin: 0 auto;
+
+  max-width: 450px;
+  padding: 20px;
+
+  border-radius: 10px;
+  border: 1px solid #b9b8b8;
+  background-color: #f9f8f8;
+
+  transition: opacity 100ms linear;
+}
+
+.popup__inner {
+
+}
+
+.popup__text p{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.popup__text p:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.popup__form {
+  margin-bottom: 10px;
+}
+
+.popup__position {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.popup__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #61988E;
+  outline: none;
+  border-radius: 5px;
+
+  border-width: 0;
+  border-style: none;
+  border-image: none;
+}
+
+button:hover {
+  background-color: #53867d;
+}
+
+button:focus {
+  background-color: #61988E;
+  cursor: pointer;
+}
+
+button:active {
+  transition: 0.5s;
+}
+
+
+/*tooltip*/
+
+.error-container {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  width: 170px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+
+  background-color: #f9f8f8;
+  border: 1px solid #ff0000;
+}
+
+.text {
+
+}
