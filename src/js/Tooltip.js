@@ -17,7 +17,5 @@ export default class Tooltip {
 
 	  const userCoords = document.querySelector('.popup__position');
 	  userCoords.offsetParent.appendChild(errorContainer);
-	  //errorContainer.style.top = `${userCoords.offsetTop + userCoords.offsetHeight / 2 - errorContainer.offsetHeight / 2}px`;
-	  //errorContainer.style.left = `${userCoords.offsetLeft + userCoords.offsetWidth + 5}px`;
 	}
 }
